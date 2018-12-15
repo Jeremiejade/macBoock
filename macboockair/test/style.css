@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    width:500px;
+    height:260px;
+    background: grey;
+    transform: scaleY(0.5);
+    
+
+}
+.child{
+    width: calc(100% / 3);
+    height:100%;
+    transform: scaleY(0.1);
+    background: green;
+    transform-origin: 50% 27%;
+    transition: all 0.5s ease;
+}
+.child:hover{
+    transform: scaleY(1);
+}

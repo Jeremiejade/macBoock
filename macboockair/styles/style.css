@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  height: calc(100vh + 2000px);
+}
+
+main #content {
+  position: relative;
+  height: 100vh;
+}
+
+main #content #macboock-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 984px;
+  height: 134px;
+}
+
+main #content #macboock-img .effet-result {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
+main #txt-air {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 984px;
+  height: 134px;
+  -webkit-transform: scaleX(0.96);
+          transform: scaleX(0.96);
+  opacity: 0;
+  -webkit-transition: opacity 1s linear, -webkit-transform 3.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 1s linear, -webkit-transform 3.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 1s linear, transform 3.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 1s linear, transform 3.5s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 3.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+main #txt-air #a-air {
+  position: relative;
+  width: 229px;
+  height: 100%;
+  background: url("../img/a.png") no-repeat;
+  background-size: contain;
+}
+
+main #txt-air #i-air {
+  width: 33px;
+  height: 100%;
+  background: url("../img/i.png") no-repeat;
+  background-size: contain;
+}
+
+main #txt-air #r-air {
+  position: relative;
+  width: 220px;
+  height: 100%;
+  background: url("../img/r.png") no-repeat;
+  background-size: contain;
+}
+
+main #macboock {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 984px;
+  height: 134px;
+  background: url("../img/mac.png") no-repeat;
+  background-size: contain;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0;
+  -webkit-transition: opacity 0.4s linear, -webkit-transform 3s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.4s linear, -webkit-transform 3s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.4s linear, transform 3s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.4s linear, transform 3s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+main #reflect-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 984px;
+  height: 67px;
+  -webkit-transform: scaleX(0.96);
+          transform: scaleX(0.96);
+  opacity: 0;
+  -webkit-transition: opacity 1s linear, -webkit-transform 3s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 1s linear, -webkit-transform 3s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 1s linear, transform 3s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 1s linear, transform 3s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+main #reflect-top figure {
+  width: calc(100% / 3);
+  height: 100%;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: 2s cubic-bezier(0.215, 0.61, 0.355, 1) -webkit-transform;
+  transition: 2s cubic-bezier(0.215, 0.61, 0.355, 1) -webkit-transform;
+  transition: 2s cubic-bezier(0.215, 0.61, 0.355, 1) transform;
+  transition: 2s cubic-bezier(0.215, 0.61, 0.355, 1) transform, 2s cubic-bezier(0.215, 0.61, 0.355, 1) -webkit-transform;
+}
+
+main #reflect-top #reflect-a-top {
+  position: relative;
+  background: url("../img/top-a.png") no-repeat;
+  -webkit-transform-origin: 50% 56.7%;
+          transform-origin: 50% 56.7%;
+}
+
+main #reflect-top #reflect-i-top {
+  background: url("../img/top-i.png") no-repeat;
+  -webkit-transform-origin: 50% 65.6%;
+          transform-origin: 50% 65.6%;
+}
+
+main #reflect-top #reflect-r-top {
+  position: relative;
+  background: url("../img/top-r.png") no-repeat;
+  -webkit-transform-origin: 50% 74.6%;
+          transform-origin: 50% 74.6%;
+}
+
+main #reflect-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 984px;
+  height: 67px;
+  opacity: 0;
+  -webkit-transform: scale(0.96, 0);
+          transform: scale(0.96, 0);
+  -webkit-transform-origin: 50% 49%;
+          transform-origin: 50% 49%;
+  -webkit-transition: opacity 1s linear, 2s cubic-bezier(0.215, 0.61, 0.355, 1) -webkit-transform;
+  transition: opacity 1s linear, 2s cubic-bezier(0.215, 0.61, 0.355, 1) -webkit-transform;
+  transition: opacity 1s linear, 2s cubic-bezier(0.215, 0.61, 0.355, 1) transform;
+  transition: opacity 1s linear, 2s cubic-bezier(0.215, 0.61, 0.355, 1) transform, 2s cubic-bezier(0.215, 0.61, 0.355, 1) -webkit-transform;
+}
+
+main #reflect-bottom figure {
+  width: calc(100% / 3);
+  height: 100%;
+}
+
+main #reflect-bottom #reflect-a-bottom {
+  position: relative;
+  background: url("../img/bottom.png") no-repeat left;
+}
+
+main #reflect-bottom #reflect-i-bottom {
+  background: url("../img/bottom.png") no-repeat center;
+}
+
+main #reflect-bottom #reflect-r-bottom {
+  position: relative;
+  background: url("../img/bottom.png") no-repeat right;
+}
+/*# sourceMappingURL=style.css.map */
